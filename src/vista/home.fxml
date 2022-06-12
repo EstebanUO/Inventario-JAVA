@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="866.0" style="-fx-background-color: black; -fx-border-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <children>
+      <Text fill="WHITE" layoutX="315.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenidos a tu Funko Shop" textAlignment="CENTER" wrappingWidth="248.5625">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font></Text>
+      <ImageView fitHeight="310.0" fitWidth="560.0" layoutX="163.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Pop.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar layoutY="-1.0" prefHeight="30.0" prefWidth="866.0">
+        <menus>
+          <Menu id="btnHome" fx:id="btnHome" mnemonicParsing="false" text="Home" />
+          <Menu id="btnAcciones" fx:id="btnAcciones" mnemonicParsing="false" text="Acciones">
+            <items>
+              <MenuItem fx:id="btnVentas" mnemonicParsing="false" onAction="#ventasBtn" text="Ventas" />
+                  <MenuItem fx:id="btnClientes" mnemonicParsing="false" onAction="#clientesBtn" text="Clientes" />
+                  <MenuItem fx:id="btnProductos" mnemonicParsing="false" onAction="#productosBtn" text="Productos" />
+            </items>
+          </Menu>
+          <Menu id="btnSalir" fx:id="btnSalir" mnemonicParsing="false" text="Salir" />
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

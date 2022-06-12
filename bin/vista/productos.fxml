@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="902.0" style="-fx-background-color: black; -fx-border-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProductosController">
+   <children>
+      <Label layoutX="341.0" layoutY="52.0" text="Gestion Productos" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="153.0" text="Nombre" textFill="#bfbfbf">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="147.0" layoutY="238.0" text="Precio venta" textFill="#bfbfbf">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="407.0" text="Cantidad minima" textFill="#bfbfbf">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="459.0" layoutY="238.0" text="Precio compra" textFill="#bfbfbf">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="283.0" layoutY="330.0" text="Cantidad bodega" textFill="#bfbfbf">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="456.0" layoutY="407.0" text="Cantidad max permitida" textFill="#bfbfbf">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idNombre" layoutX="412.0" layoutY="153.0" promptText="Nombre Producto" />
+      <TextField fx:id="idPven" layoutX="266.0" layoutY="238.0" promptText="Precio Venta" />
+      <TextField fx:id="idPcom" layoutX="589.0" layoutY="238.0" promptText="Precio Compra" />
+      <TextField fx:id="idCbodega" layoutX="440.0" layoutY="330.0" promptText="Cantidad Bodega" />
+      <TextField fx:id="idCmax" layoutX="636.0" layoutY="407.0" promptText="Cantidad Max Permitida" />
+      <TextField fx:id="idCmin" layoutX="236.0" layoutY="406.0" promptText="Cantidad Minima" />
+      <Button fx:id="btnGuardar" layoutX="214.0" layoutY="529.0" mnemonicParsing="false" onMouseClicked="#clickGuardar" prefHeight="32.0" prefWidth="87.0" style="-fx-border-color: white; -fx-background-color: black;" text="Guardar" textFill="WHITE" />
+      <Button fx:id="btnBorrar" layoutX="415.0" layoutY="529.0" mnemonicParsing="false" onMouseClicked="#clickBorrar" prefHeight="32.0" prefWidth="87.0" style="-fx-border-color: white; -fx-background-color: black;" text="Borrar" textFill="WHITE" />
+      <Button fx:id="btntActualizar" layoutX="602.0" layoutY="529.0" mnemonicParsing="false" onMouseClicked="#clickActualizar" prefHeight="32.0" prefWidth="87.0" style="-fx-border-color: white; -fx-background-color: black;" text="Actualizar" textFill="WHITE" />
+      <ImageView fitHeight="32.0" fitWidth="36.0" layoutX="570.0" layoutY="150.0" onMouseClicked="#buscarImgClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@buscar.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtEntrada" layoutX="96.0" layoutY="468.0" prefHeight="45.0" prefWidth="693.0" />
+   </children>
+</AnchorPane>
